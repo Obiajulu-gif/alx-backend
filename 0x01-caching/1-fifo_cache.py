@@ -2,17 +2,21 @@
 """1. FIFO caching"""
 
 from base_caching import BaseCaching
+
+
 from collections import OrderedDict
 
 
 class FIFOCache(BaseCaching):
     """
-    FIFO algorithm for cache
+    Represents an object that allows storing and
+    retrieving items from a dictionary with a FIFO
+    removal mechanism when the limit is reached.
     """
 
     def __init__(self):
         """
-        Initialize
+        Initializes the cache.
         """
         super().__init__()
         self.cache_data = OrderedDict()

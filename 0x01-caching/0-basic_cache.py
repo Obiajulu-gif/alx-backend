@@ -1,24 +1,7 @@
 #!/usr/bin/python3
 """0. Basic dictionary"""
 
-
-class BaseCaching:
-    """
-    BaseCaching defines:
-        - caching system methods for a caching system
-        - data structure for caching (a dictionary called "cache data")
-    """
-
-    def __init__(self):
-        self.cache_data = {}
-
-    def print_cache(self):
-        """
-        Print the cache.
-        """
-        print("Current cache:")
-        for key in self.cache_data.keys():
-            print("{}: {}".format(key, self.cache_data[key]))
+from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):

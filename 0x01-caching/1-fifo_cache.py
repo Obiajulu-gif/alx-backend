@@ -5,10 +5,14 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """ 
+    """
     FIFO algorithm for cache
     """
+
     def __init__(self):
+        """
+        Initialize
+        """
         super().__init__()
         self.key_order = []
 

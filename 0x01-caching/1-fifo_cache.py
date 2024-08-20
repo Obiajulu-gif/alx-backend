@@ -27,19 +27,15 @@ class FIFOCache(BaseCaching):
         check if the number of items in self.cache_data
         higher than that of BaseCaching.MAX_ITEMS
         """
-        if key is not None or item is not None:
-            if key in self.cache_data:
-                del self.cache_data[key]
-            self.cache_data[key] = item
-            if len(self.cache_data) > BaseCaching.MAX_ITEMS:
-                first_key = next(iter(self.cache_data))
-                del self.cache_data[first_key]
-                print("DISCARD: {}".format(first_key))
+        if key is None or item is None:
+            return
+        self.cache_data[key] = item
+        if len(self.cache_data) > BaseCaching.MAX_ITEMS:
+            first_key, _ = self.cache_data.popitem(False)
+            print("DISCARD:", first_key)
 
     def get(self, key):
         """
         Return the value of self.cache_data linked to key
         """
-        if key is None or key not in self.cache_data:
-            return None
-        return self.cache_data[key]
+        return self.cache_data.get(key, None)

@@ -522,7 +522,6 @@ guillaume@ubuntu:~/0x01$
 ```
 
 **Repo:**
-
 -   GitHub repository: `alx-backend`
 -   Directory: `0x01-caching`
 -   File: `4-mru_cache.py`

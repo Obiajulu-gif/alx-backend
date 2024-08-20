@@ -23,7 +23,7 @@ class BaseCaching:
 
 class BasicCache(BaseCaching):
     """
-    BasicCache class that inherit fro the BaseCaching
+    BasicCache class that inherit fro the BaseCaching.
     """
 
     def put(self, key, item):

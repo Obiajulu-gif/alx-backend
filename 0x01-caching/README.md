@@ -526,4 +526,3 @@ guillaume@ubuntu:~/0x01$
 -   Directory: `0x01-caching`
 -   File: `4-mru_cache.py`
 
-Copyright © 2024 ALX, All rights reserved.

@@ -520,7 +520,6 @@ E: Battery
 K: K
 guillaume@ubuntu:~/0x01$ 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-backend`
 -   Directory: `0x01-caching`

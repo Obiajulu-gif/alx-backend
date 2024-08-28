@@ -11,9 +11,17 @@ babel = Babel()
 
 babel.init_app(app)
 
+
 @app.route('/')
 def index():
-    return render_template('3-index.html', home_title=_("Welcome to Holberton"), home_header=_("Hello world!"))
+    """
+    Render the index.html template
+    """
+    return render_template(
+        '3-index.html',
+        home_title=_("Welcome to Holberton"),
+        home_header=_("Hello world!"))
+
 
 if __name__ == '__main__':
     app.run(debug=True)

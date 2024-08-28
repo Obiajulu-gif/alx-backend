@@ -1,3 +1,5 @@
+Score: 0.0% (Checks completed: 0.0%)
+
 Creating a user login system is outside the scope of this project. To emulate a similar behavior, copy the following user table in `5-app.py`.
 
 ```
@@ -24,6 +26,6 @@ In your HTML template, if a user is logged in, in a paragraph tag, display a wel
 
 **Visiting `http://127.0.0.1:5000/` in your browser should display this:**
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/2c5b2c8190f88c6b4668.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240827%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240827T144643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3f03be2531a9921b3f2885066e8ad1c75d2410c8cc41eb80852e42179c81d2a7)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/2c5b2c8190f88c6b4668.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240828%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240828T134624Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=370592d19b02e457da5db42e85f1ced79d6c3303866b32f3ce88dbbb1652ac75)
 
-**Visiting `http://127.0.0.1:5000/?login_as=2` in your browser should display this:** ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/277f24308c856a09908c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240827%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240827T144643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e4dbddb4b6f72780875d071a0596b43db306446241b8699ef38ca0e4905c4ce2)
+**Visiting `http://127.0.0.1:5000/?login_as=2` in your browser should display this:** ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/277f24308c856a09908c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240828%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240828T134624Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a464120355b0f2eea2149e7816e3ef379d54901fa463ceeaa41dca977770ea07)

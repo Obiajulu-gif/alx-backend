@@ -3,24 +3,36 @@
 A Flask app enhanced with Flask-Babel for i18n,
 with parametrized locale selection
 """
-from flask import Flask, render_template
-from flask_babel import Babel, _
+from flask import Flask, render_template, request
+from flask_babel import Babel
 
+class Config:
+    """ 
+    Config class for app
+    """
+    LANGUAGES = ["en", "fr"]
+    BABEL_DEFAULT_LOCALE = "en"
+    BABEL_DEFAULT_TIMEZONE = "UTC"
+    
+    
 app = Flask(__name__)
-babel = Babel()
+app.config.from_object(Config)
+app.url_map.strict_slashes = False
+babel = Babel(app)
 
-babel.init_app(app)
-
+@babel.localeselector
+def get_locale() -> str:
+    """ 
+    Get locale from request
+    """
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 @app.route('/')
-def index():
+def index() -> str:
     """
     Render the index.html template
     """
-    return render_template(
-        '3-index.html',
-        home_title=_("Welcome to Holberton"),
-        home_header=_("Hello world!"))
+    return render_template('3-index.html')
 
 
 if __name__ == '__main__':

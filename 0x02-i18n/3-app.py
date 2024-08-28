@@ -5,7 +5,14 @@ with parametrized locale selection
 """
 from flask import Flask, render_template, request
 from flask_babel import Babel, _
-from config import Config  # Assuming Config is defined elsewhere
+
+
+class Config:
+    """ Config class for app """
+    LANGUAGES = ["en", "fr"]
+    BABEL_DEFAULT_LOCALE = "en"
+    BABEL_DEFAULT_TIMEZONE = "UTC"
+
 
 app = Flask(__name__)
 app.config.from_object(Config)
